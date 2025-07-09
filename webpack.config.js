@@ -93,11 +93,14 @@ module.exports = {
   entry: "./js/main.js",
   output: {
     filename: `./js/${filename("js")}`,
-    path: path.resolve(__dirname, "app"),
+    path: path.resolve(__dirname, "dist"),
     clean: true,
     publicPath: isDev ? "/" : "/final-round/",
   },
   devServer: {
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
     historyApiFallback: true,
     open: true,
     compress: true,
