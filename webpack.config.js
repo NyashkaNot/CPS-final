@@ -95,7 +95,7 @@ module.exports = {
     filename: `./js/${filename("js")}`,
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    publicPath: isDev ? "/" : "/final-round/",
+    publicPath: isDev ? "/" : "/CPS-final/",
   },
   devServer: {
     static: {
