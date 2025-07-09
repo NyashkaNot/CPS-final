@@ -443,12 +443,16 @@ button {
   .note {
     width: 421px;
     padding-left: 0px;
+    padding-top: 24px;
   }
 }
 
 @media (min-width: 1120px) {
   .swiper__block {
     padding: 0px 32px 0px 32px;
+  }
+  .note {
+    padding-top: 32px;
   }
 }
 @media (min-width: 1848px) {
